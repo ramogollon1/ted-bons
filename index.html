@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ted-bons</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TEDxHamburg">
+  <meta name="keywords" content="TEDxHamburg">
+	<title>TEDxHamburg</title>
 	<link rel="stylesheet" type="text/css" href="Css/Stylesheet.css">
 </head>
 <body>
 	<!-- Header -->
 	<div class="c-hero">
 		<!-- Nav desktop -->
-		<div class="c-navigation">
+		<div class="c-navigation" id="nav-header">
 			<img class="c-logo" src="Logos/Hamburg.png" alt="">
 			<div class="c-nav" id="c-nav-move">
 				<ul>
@@ -19,20 +23,14 @@
 					<li><a class="c-nav-item" href="#">APPLY</a></li>
 					<li><a class="c-nav-item" href="#">PARTNERS</a></li>
 				</ul>
-<!-- 			  <a class="active c-nav-item" href="#">EVENTS</a>
-			  <a class="c-nav-item" href="#">TICKETS</a>
-			  <a class="c-nav-item" href="#">REVIEW</a>
-			  <a class="c-nav-item" href="#">APPLY</a>
-			  <a class="c-nav-item" href="#">PARTNERS</a> -->
 			</div>
-		
 			<!-- Nav mobile -->
 			<div class="c-navigation-mobile">
-				<a href="#menu" id="toggle">
+				<a href="#" id="toggle">
 					<span></span>
 				</a>
 				<div id="menu">
-					<nav id="primary_nav_wrap">
+					<nav class="nav-mobile">
 				  <ul>
 				    <li><a href="#">EVENTS</a></li>
 				    <li><a href="#">TICKETS</a></li>
@@ -43,29 +41,12 @@
 					</nav>
 				</div>
 			</div>
-			<!-- nav sidebar -->
+			<!-- Nav sidebar -->
 			<nav class="nav-sidebar">
 			  <div id="menuToggle">
-			    <!--
-			    A fake / hidden checkbox is used as click reciever,
-			    so you can use the :checked selector on it.
-			    -->
 			    <input type="checkbox" />
-			    
-			    <!--
-			    Some spans to act as a hamburger.
-			    
-			    They are acting like a real hamburger,
-			    not that McDonalds stuff.
-			    -->
 			    <span></span>
 			    <span></span>
-			    <!-- <span></span> -->
-			    
-			    <!--
-			    Too bad the menu has to be inside of the button
-			    but hey, it's pure CSS magic.
-			    -->
 			    <ul id="menu">
 			      <li><a href="#">Newsletter</a></li>
 			      <li><a href="#">Contact</a></li>
@@ -76,49 +57,103 @@
 			</nav>
 		</div>
 		<!-- Slider -->
-		<!-- <div class="c-hero-slider">
-			<div class="c-arrow-right">
-				<div class="arrow">
-					<img class="bg" src="" alt="">
-				</div>
-			</div>
-			<div class="c-arrow-left">
-				<div class="arrow">
-					<img class="bg" src="" alt="">
-				</div>
-			</div>
-			<div class="c-slide-1">
-				<div class="c-slide-1-heading">Rock the Boat</div>
-				<div class="c-slide-1-date">June, 2017</div>
-				<div class="c-slide-1-button"> 
-					<div class="see-more">See More</div> 
-					<div class="c-arrow-right-is-red">
-						<div class="c-arrow-right-red">
-							<div class="c-arrow-container"></div>
-						</div>
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+		  <div class="mySlides fade">
+		  	<div class="slide-text">
+			    <div class="c-slide-1-heading">Rock the Boat</div>
+					<div class="c-slide-1-date">June 25, 2017</div>
+					<div class="c-slide-1-button"> 
+						<div class="see-more">
+							<div class="text-see-more">See More</div>
+							<div class="c-arrow-right-red"></div>
+						</div> 
 					</div>
 				</div>
-				<div class="c-slide-1-img">
-					<div class="c-slide-1-img-overlay"></div>
+	    	<div class="c-slide-img c-slide-img-1">
+	    		<div class="c-slide-img-overlay"></div>
+	    	</div>
+	    	<div class="c-social-media">
+					<a href="#"><img class="c-social-facebook" src="Social/Facebook.png" alt="Facebook"></a>
+					<a href="#"><img class="c-social-tumblr" src="Social/Tumblr.png" alt="Tumblr"></a>
+					<a href="#"><img class="c-social-youtube" src="Social/Youtube.png" alt="Youtube"></a>
+					<a href="#"><img class="c-social-flickr" src="Social/Flickr.png" alt="Flickr"></a>
 				</div>
-				<div class="c-slide-1-location">
-					<div class="c-ico-16-location">
-						<div class="oval-14"></div>
-						<div class="oval-15"></div>
-						<div class="oval-119"></div>
-						<div class="rectangle-2"></div>
+	    	<div class="c-slide-1-location footer-slide">
+			    <div class="text-1">
+			    	<img class="c-image-location" src="Icons/Ico-Location.png" alt="location">
+			    	Laeiszhalle
+			    </div>
+					<div class="c-divider"></div>
+					<div class="text-2">Johannes-Brahams-Platz</div>
+				</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		  	<div class="slide-text">
+			    <div class="c-slide-1-heading">Mind</div>
+					<div class="c-slide-1-date">November 15, 17</div>
+					<div class="c-slide-1-button"> 
+						<div class="see-more">
+							See More
+							<div class="c-arrow-right-red"></div>
+						</div> 
 					</div>
 				</div>
-				<div class="laeiszhalle">Laeiszhalle</div>
-				<div class="c-divider"></div>
-			</div>
+	    	<div class="c-slide-img c-slide-img-2">
+	    		<div class="c-slide-img-overlay"></div>
+	    	</div>
+		    <div class="c-social-media">
+					<img class="c-social-facebook" src="Social/Facebook.png" alt="Facebook">
+					<img class="c-social-tumblr" src="Social/Tumblr.png" alt="Tumblr">
+					<img class="c-social-youtube" src="Social/Youtube.png" alt="Youtube">
+					<img class="c-social-flickr" src="Social/Flickr.png" alt="Flickr">
+				</div>
+	    	<div class="c-slide-1-location footer-slide">
+			    <div class="text-1">
+			    	<img class="c-image-location" src="Icons/Ico-Location.png" alt="location">
+			    	Laeiszhalle
+			    </div>
+					<div class="c-divider"></div>
+					<div class="text-2">Johannes-Brahams-Platz</div>
+				</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		  	<div class="slide-text">
+			    <div class="c-slide-1-heading">Rock the Boat</div>
+					<div class="c-slide-1-date">January 10, 2018</div>
+					<div class="c-slide-1-button"> 
+						<div class="see-more">
+							See More
+							<div class="c-arrow-right-red"></div>
+						</div> 
+					</div>
+				</div>
+	    	<div class="c-slide-img c-slide-img-3">
+	    		<div class="c-slide-img-overlay"></div>
+	    	</div>
+		    <div class="c-social-media">
+					<img class="c-social-facebook" src="Social/Facebook.png" alt="Facebook">
+					<img class="c-social-tumblr" src="Social/Tumblr.png" alt="Tumblr">
+					<img class="c-social-youtube" src="Social/Youtube.png" alt="Youtube">
+					<img class="c-social-flickr" src="Social/Flickr.png" alt="Flickr">
+				</div>
+	    	<div class="c-slide-1-location footer-slide">
+			    <div class="text-1">
+			    	<img class="c-image-location" src="Icons/Ico-Location.png" alt="location">
+			    	Laeiszhalle
+			    </div>
+					<div class="c-divider"></div>
+					<div class="text-2">Johannes-Brahams-Platz</div>
+				</div>
+		  </div>
+			<img class="prev bg" src="Arrows/HeroSlider-ArrowLeft.png" onclick="plusSlides(-1)" alt="previous">
+			<img class="next bg" src="Arrows/HeroSlider-ArrowRight.png" onclick="plusSlides(1)" alt="next">
 		</div>
-		<div class="c-social-media">
-			<div class="c-social-media-facebook"></div>
-		</div> -->
 	</div>
 	<!-- Latest Videos -->
-	<!-- <div class="c-latest-videos">
+	<div class="c-latest-videos">
 		<div class="c-button">
 			<div class="see-more-latest"></div>
 			<div class="c-arrow-right-is-red"></div>
@@ -135,7 +170,7 @@
 			</div>
 			<div class="c-arrow-right-latest"></div>
 		</div>
-	</div> -->
+	</div>
 	<!-- Latest Other Videos -->
 	<!-- <div class="c-latest-other">
 		<div class="c-heading-latest-other">Latest Other Videos</div>
@@ -239,6 +274,6 @@
 			<p>This independent TEDx event is operated under license from TED.</p>
 		</div>
 	</div> -->
-	<script type="text/javascript" src="Js/Main.js"></script>
+	<script type="text/javascript" src="Js/Main.js" async></script>
 </body>
 </html>
