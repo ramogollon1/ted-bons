@@ -319,6 +319,7 @@ table {
 	font-weight: bold;
 	padding: 15px;
 	text-align: center;
+	letter-spacing: 1px;
 }
 
 /* 2.2 Menu mobile*/
@@ -892,7 +893,7 @@ table {
 .c-video-title {
 	height: 32px;
 	width: 128px;
-	font-family: "Helveticaneue", Fallback, sans-serif;
+	font-family: "Helveticaneue-light", Fallback, sans-serif;
 	font-size: 24px;
 	line-height: 32px;
 }
@@ -900,7 +901,7 @@ table {
 .c-video-description {
 	height: 28px;
 	width: 390px;
-	font-family: "Helveticaneue", Fallback, sans-serif;
+	font-family: "Helveticaneue-light", Fallback, sans-serif;
 	font-size: 16px;
 	line-height: 28px;
 }
@@ -1014,6 +1015,7 @@ table {
 
 .c-button-play-latest-other {
 	width: 16px;
+	height: 16px;
 	margin-right: 13px;
 }
 
@@ -1287,7 +1289,7 @@ table {
 .c-subtitle {
 	text-align: left;
 	color: #262626;
-	font-family: "Helveticaneue", Fallback, sans-serif;
+	font-family: "Helveticaneue-light", Fallback, sans-serif;
 	font-size: 22px;
 	line-height: 24px;
 	margin-top: 16px;
@@ -1298,7 +1300,7 @@ table {
 	width: 944px;
 	text-align: left;
 	color: #262626;
-	font-family: "Helveticaneue", Fallback, sans-serif;
+	font-family: "Helveticaneue-light", Fallback, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	margin-top: 25px;
@@ -1532,7 +1534,9 @@ table {
 	}
 
 	.c-button-play-latest-other {
-		width: 30px;
+		top: 7px;
+		left: 5px;
+		position: relative;
 	}
 
 	.text-card {
@@ -1545,6 +1549,7 @@ table {
 
 	.slide-text {
 		top: 280px;
+		left: 20px;
 	}
 
 	.c-latest-other {
@@ -1618,7 +1623,7 @@ table {
 	}
 
 	.c-latest-other .r-col-4 {
-		width: 45%;
+		width: 50%;
 		margin: 5px;
 	}
 
@@ -1647,7 +1652,7 @@ table {
 	}
 
 	.c-latest-videos {
-		height: 650px;
+		height: 740px;
 	}
 
 	.c-video-slider {
@@ -1700,7 +1705,9 @@ table {
 	}
 
 	.c-button-play-latest-other {
-		width: 30px;
+		top: 7px;
+		left: 5px;
+		position: relative;
 	}
 
 	.text-card {
@@ -1711,11 +1718,8 @@ table {
 		display: none;
 	}
 
-	/*.slide-text {
-	  top: 280px;
-	}*/
 	.c-latest-other {
-		min-height: 1150px;
+		min-height: 2050px;
 	}
 
 	.text-about {
@@ -1867,7 +1871,9 @@ table {
 	}
 
 	.c-button-play-latest-other {
-		width: 30px;
+		top: 7px;
+		left: 5px;
+		position: relative;
 	}
 
 	.text-card {
@@ -1878,9 +1884,6 @@ table {
 		display: none;
 	}
 
-	/*.slide-text {
-	  top: 280px;
-	}*/
 	.c-latest-other {
 		min-height: 1150px;
 	}
