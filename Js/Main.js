@@ -60,17 +60,24 @@
 	}
 
 	/* ------- Nav transparent scroll ------  */
+	var node = document.getElementById('nav-header'),
+  nodeOffs = node.offsetTop,
+  parent = node;
+	while(parent = parent.offsetParent){
+		if(parent.offsetTop){
+		  nodeOffs += parent.offsetTop;
+		}
+	}
+	window.addEventListener('scroll', function(event){    
+	  var scrollPos = document.body.scrollTop;
+	  if (scrollPos > nodeOffs){
+	    if (scrollPos < (document.body.scrollHeight - node.clientHeight - nodeOffs))
+			node.classList.add("nav-colored");
+			node.classList.remove("nav-transparent");
+	  }
+	  else {
+      node.classList.add("nav-transparent");
+	    node.classList.remove("nav-colored");
+	  }
+	}); 
 
-	var myNav = document.getElementById('nav-header');
-	window.onscroll = function () { 
-	    // "use strict";
-	    console.log(document.body.scrollTop);
-	    if (document.body.scrollTop >= 50 ) {
-	        myNav.classList.add("nav-colored");
-	        myNav.classList.remove("nav-transparent");
-	    } 
-	    else {
-	        myNav.classList.add("nav-transparent");
-	        myNav.classList.remove("nav-colored");
-	    }
-	};
